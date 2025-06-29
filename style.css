@@ -146,3 +146,62 @@ footer {
     font-weight: 300;
     padding: 0 16px;
 }
+/* ...existing code... */
+
+/* Responsive styles for mobile */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        height: auto;
+        padding: 8px;
+    }
+    .left-section img {
+        width: 120px;
+        padding-left: 8px;
+    }
+    .med-section {
+        margin-left: 0;
+        width: 100%;
+        justify-content: center;
+    }
+    .med-section form {
+        width: 90vw;
+        min-width: 0;
+        max-width: 100%;
+    }
+    .right-section {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        padding-top: 8px;
+    }
+    .right-section a {
+        padding-right: 10px;
+    }
+    .content-area {
+        flex-direction: column;
+        height: auto;
+    }
+    aside {
+        width: 100vw;
+        min-width: 0;
+        height: auto;
+        position: static;
+    }
+    nav {
+        padding-right: 0;
+        margin: 0;
+    }
+    .nav-link {
+        padding: 10px 8px;
+    }
+    p, footer {
+        font-size: 1.2rem;
+        padding: 0 8px;
+    }
+    footer {
+        height: 40px;
+        font-size: 0.9rem;
+        padding: 0 8px;
+    }
+}
